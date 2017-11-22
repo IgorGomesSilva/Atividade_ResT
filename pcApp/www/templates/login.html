@@ -1,0 +1,26 @@
+<ion-view view-title="{{pageTitle}}">
+  <ion-content>
+
+    <ion-list>
+      <br><br>
+      <label class="item item-input item-stacked-label">
+        <p>Email</p>
+        <input type="text"  ng-model="usuario.email"/>
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <p>Senha</p>
+        <input type="password"  ng-model="usuario.senha"/>
+      </label>
+    </ion-list>
+
+    <div class="padding">
+      <button class="button button-block button-balanced" ng-click="login()">Entrar</button>
+    </div>
+
+    <div class="padding">
+      <button class="button button-block button-energized" ng-click="cadastrar()">Cadastrar</button>
+    </div>
+
+  </ion-content>
+</ion-view>
